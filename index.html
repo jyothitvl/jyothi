@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics</title>
+  <style>
+    table {
+      width: 100%;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      font-family: verdana;
+    }
+
+    th {
+      font-size: 20px;
+    }
+
+    #t01 tr:nth-child(even) {
+      background-color: #LightGray;
+    }
+
+    #t01 tr:nth-child(odd) {
+      background-color: Gray;
+    }
+
+    #t01 th {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1> Hello world!</h1>
+  <p>Some elements have no content(like the &lt br &gt elements). These elements called <br/> empty elements. Empty elements do not
+    have end tags.<em> html:5 tab </em>.
+    <hr />
+  </p>
+  <pre id="poem">Some say the world will end in fire,
+Some say in ice.
+From what I've tasted of desire
+I hold with &nbsp &nbsp those who favour fire.
+But if it had to perish twice,
+I think I know enough of hate
+To say that for destruction ice
+Is also great
+And would suffice.</pre>
+  <hr />
+  <p>
+    <abbr title="Hyper Text Markup Langau">HTML</abbr> links are defined with <b>&lt a &gt </b> tag. The link's
+    destination is specified in the <mark> <q>href</q> </mark> Attribut.
+    <a href="https://www.w3schools.com">This is a link.</a><br/>
+    HTML images are defined with &lt; <strong>img</strong> &gt; tag. The source file (<mark>src</mark>), alternative text
+    (alt), width, and height are provided as attributes. <br/>
+    <img src="https://yt3.ggpht.com/ytc/AAUvwni7c5gibwQBa26X6WeVYcZCgAY_jPumSmJLntMB=s900-c-k-c0x00ffffff-no-rj" alt="W3Schools.com" width="104" height="142">
+    View HTML source code:<kbd> Ctrl+U</kbd>
+    Inspect HTML Elements: <kbd>Ctrl+Shift+I</kbd>
+    <hr />
+  </p>
+
+  <h2>Lists</h2>
+  <a name="UnorderedList" title="Id name"></a>
+  <h3>Unordered List</h3>
+  <p>
+    An unordered list start with &lt; ul &gt; tag. Each list item starts with the &lt; li &gt; tag. The list item will
+    be marked with bullets by default.
+  <ul>
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Tea</li>
+  </ul>
+  </p>
+
+  <h3>Ordered List</h3>
+  <p id="OrderedList">
+    An ordered list start with &lt; ol &gt; tag. Each list item starts with the &lt; li &gt tag. The list item will be
+    marked with numbers by default.
+  <ol>
+    <li>Coffee</li>
+    <li>Milk</li>
+    <li>Tea</li>
+  </ol>
+  </p>
+  <h3>Description List</h3>
+  <p>
+    Adescription list is a list of terms, with a description of each term.
+    The &lt; dl &gt; tag defines the description list, the &lt; dt &gt; tag defines the term (name), and the &lt; dd
+    &gt; tag describe each term.
+  <dl>
+    <dt>Coffee</dt>
+    <dd>-black hot drik</dd>
+    <dt>Milk</dt>
+    <dd>-white cold drik</dd>
+  </dl>
+  </p>
+  <h3>HTML Links (Anchors)</h3>
+  <p>
+    <b>Source anchor:</b> The most important attribute of the &lt; a &gt; element is the <mark>href</mark> attribute,
+    which indicate the link's destination.
+    <a href="https://www.w3schools.com/">Visit W3 Schools.com!</a><br/>
+    <b>Named anchor:</b>
+    <a href="#UnorderedList">show to Unorderlist</a><br/>
+    <strong>Target Attributes:</strong> The target attribute specifies where to open the link document.The target
+    attribute can have one of the following values:<br/>
+  <dl>
+    <dt>_self</dt>
+    <dd>-Default. opens the document in the same window</dd>
+    <dt>_blank</dt>
+    <dd>Open the document in the new window</dd>
+    <dt>_parent</dt>
+    <dd>-Open document in the parent frame</dd>
+    <dt>_top</dt>
+    <dd>-Default. open document in the full body of the widow</dd>
+  </dl>
+  <a href="https://www.w3schools.com/" target="_blank">Visit W3 Schools.com!</a>Open in new window<br/>
+  <a href="https://www.w3schools.com/" target="_parent">Visit W3 Schools.com!</a>Open in the parent frame<br/>
+  <a href="https://www.w3schools.com/" target="_top">Visit W3 Schools.com!</a>Open in the full body of the widow.<br/>
+  <b>Absolute URLs vs. Relative URLs:</b> Absolute URL is a full web address in the <mark>href</mark> attribute.Relative
+  URL is alink to a page within the same websit or local link.
+  <h4>Absolute URLs</h4>
+  <p><a href="https://www.w3schools.com/">W3C</a></p>
+  <p><a href="https://www.google.com/">Google</a></p>
+  <h4>Relative URLs</h4>
+  <p><a href="/links.html">HTML links file</a></p>
+  <h4>Use an image as a link</h4>
+  <p>The image below is a link. try to click on it. The <mark>title</mark> attribute specifies extra information about
+    an element.The information shows as tooltip. </p>
+  <a href="/links.html"
+    title="click on it"><img src="https://i.pinimg.com/originals/f9/21/35/f92135950f88020f5f5019ff8714cba4.jpg" alt="smiley" width="140" height="140"></a>
+  <h4>Link to an Email Address</h4>
+  <p>Use <mark>mailto:</mark> inside the <mark>href</mark> attribute to create a link that opens the users email
+    program.
+    <a href="mailto:jyothi@gmail.com" title="send mail to jyothi">Send email</a>
+  </p>
+  <h4>Button as a link</h4>
+  <p>To use html button as a link, you have to use javaScript code.</p>
+  <button onclick="document.location='/links.html'">button</button>
+  <a href="#poem" title="go to poem">poem</a>
+  </p>
+  <h3>THML Tables</h3>
+  <p>The <mark>&lt;table&gt;</mark> tag defines as HTML table. Each HTML row is defined with a &lt;tr&gt; tag. Each
+    table header is defined with a &lt;th&gt; tag. Each table data/cell is defined with a &lt;td&gt; tag.By default, the
+    text in &lt;th&gt; elements are bold,centered and the text in &lt;td&gt; elements are regular and left-aligned.
+    <mark>&lt;caption&gt;</mark> tag used for table title.
+  </p>
+  <table>
+    <caption>Basic HTML Table</caption>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">List can be styled in many different ways</td>
+      </tr>
+    </tfoot>
+  </table>
+  <h3>HTML Styles</h3>
+  <p>The HTML <b>style</b> attribute is used to add styles to an element, such as color, font, size, and more. style
+    attribute syntax:<br/>
+    <strong>&lt;tagname style="property:value;"&gt;</strong><br/>
+  The <b>property</b> is a CSS property. The <b>value</b> is a CSS value.You will learn more about CSS later.
+  <ul>
+    <li>
+      Use <mark>background-color</mark> property for background color.
+    </li>
+    <li>
+      Use <mark>color</mark> property for text colors.
+    </li>
+    <li>
+      Use <mark>font-family</mark> property for text fonts.
+    </li>
+    <li>
+      Use <mark>font-size</mark> property for text sizes.
+    </li>
+    <li>
+      Use <mark>text-align</mark> property for text alignment.
+    </li>
+    <li>
+      Use <mark>border</mark> property to define a borders.
+    </li>
+    <li>
+      Use <mark>border-collapse</mark> property to collapse cell borders.
+    </li>
+    <li>
+      Use <mark>padding</mark> property to add padding to cells.
+    </li>
+    <li>
+      Use <mark>border-spacing</mark> property to set the spacing between cells.
+    </li>
+    <li>
+      Use <mark>calspan</mark> attribute to make a cell span may columns.
+    </li>
+    <li>
+      Use <mark>rowspan</mark> attribute to make a cell span may rows.
+    </li>
+    <li>
+      Use <mark>id</mark> attribute to uniquely define one table.
+    </li>
+  </ul>
+  </p>
+  <h2>Styling Tables</h2>
+  <table>
+    <caption>Basic HTML Table</caption>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">List can be styled in many different ways</td>
+      </tr>
+    </tfoot>
+  </table>
+  <br>
+  <table id="t01">
+    <caption>Table Format</caption>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td rowspan="2">94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">List can be styled in many different ways</td>
+      </tr>
+    </tfoot>
+  </table>
+  <h3>HTML Images</h3>
+
+
+
+</body>
+
+</html>
