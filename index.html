@@ -383,25 +383,105 @@ And would suffice.</pre>
     <tbody>
       <tr>
         <td>
-          <ol>
+          <ul>
             <li>A block level Element always starts on a new line.</li>
-          </ol>
+          </ul>
         </td>
         <td>
-          <ol>
+          <ul>
             <li>A inline Element does not start on a new line.</li>
-          </ol>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>It always takes up the full width available.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>It only takes up as much width as necessary.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>It has a top and a bottom margin.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Inline element does not.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>Ex:&lt;div&gt;, &lt;dl&gt;,&lt;h1&gt;-&lt;h6&gt; etc.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Ex:&lt;span&gt;, &lt;a&gt;,&lt;button&gt;&lt;input&gt; etc.</li>
+          </ul>
         </td>
       </tr>
     </tbody>
   </table>
-  <p>
-
+  <br>
+  <table>
+    <caption>Difference between &lt;div&gt; and &lt;span&gt; Element</caption>
+    <thead>
+      <tr>
+        <th>&lt;div&gt; Element</th>
+        <th>&lt;span&gt; Element</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>It is often used as a container for other HTML element.</td>
+        <td>It is an inline container used to mark up a part of a text, or part of a document.</td>
+      </tr>
+      <tr>
+        <td>It has no required attributes, but <b>style, class and id</b> are common.</td>
+        <td>It has no required attributes, but <b>style, class and id</b> are common.</td>
+      </tr>
+      <tr>
+        <td>When used together with CSS, the &lt;div&gt; element can be used to style blocks of content.</td>
+        <td>When used together with CSS, the &lt;span&gt; element can be used to style parts of the text.</td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="background-color:Gray; color:white; padding: 20px;">
+    <h4>Div Element</h4>
+    <p>It is often used as a container for other HTML element.It has no required attributes, but
+      <b>style, class and id</b> are common.
+    </p>
+    <p>When used together with CSS, the &lt;div&gt; element can be used to style blocks of content
+    </p>
+  </div>
+  <h4>Span Element</h4>
+  <p>It is an inline container used to mark up a part of a text, or part of a document.It has no required attributes,
+    but <span style="color:DodgerBlue; font-weight:bold;">style, class and id</span> are common.
   </p>
-
-
-
-
-</body>
+  When used together with CSS, the &lt;div&gt; element can be used to
+  <span style="color:MediumSeaGreen; font-weight:bold;">style blocks of content.</span>
+  <p>
+  <div>
+    <h3>HTML Classes</h3>
+    <p>
+    <ol>
+      <li>The <b>class</b> attribute can be used on any HTML element.</li>
+      <li>Different HTML elementcan point to the same class name.</li>
+      <li>The HTML class attribute specifies one or more class names for an element.</li>
+      <li>To define multiple classes, separate the class name with a space, eg. &lt;div class="city main"&gt;. the
+        element will be styled according to all the classes specified.</li>
+    </ol>
+    </p>
+    <h3>HTML Id</h3>
+  </div>
 
 </html>
