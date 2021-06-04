@@ -41,6 +41,24 @@
       background-color: black;
       color: white;
     }
+
+    img {
+      width: 100%;
+    }
+
+    #image1 {
+      background-image: url('https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276__340.jpg');
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    #tab1 {
+      background-image: url('https://cdn.stocksnap.io/img-thumbs/280h/abstract-background_LCXR4ESCV7.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
   </style>
 </head>
 
@@ -66,7 +84,7 @@ And would suffice.</pre>
     <a href="https://www.w3schools.com">This is a link.</a><br/>
     HTML images are defined with &lt; <strong>img</strong> &gt; tag. The source file (<mark>src</mark>), alternative text
     (alt), width, and height are provided as attributes. <br/>
-    <img src="https://yt3.ggpht.com/ytc/AAUvwni7c5gibwQBa26X6WeVYcZCgAY_jPumSmJLntMB=s900-c-k-c0x00ffffff-no-rj" alt="W3Schools.com" width="104" height="142">
+    <img src="https://yt3.ggpht.com/ytc/AAUvwni7c5gibwQBa26X6WeVYcZCgAY_jPumSmJLntMB=s900-c-k-c0x00ffffff-no-rj" alt="W3Schools.com" style="width:104px;height:142px;">
     View HTML source code:<kbd> Ctrl+U</kbd>
     Inspect HTML Elements: <kbd>Ctrl+Shift+I</kbd>
     <hr />
@@ -140,7 +158,7 @@ And would suffice.</pre>
   <p>The image below is a link. try to click on it. The <mark>title</mark> attribute specifies extra information about
     an element.The information shows as tooltip. </p>
   <a href="/links.html"
-    title="click on it"><img src="https://i.pinimg.com/originals/f9/21/35/f92135950f88020f5f5019ff8714cba4.jpg" alt="smiley" width="140" height="140"></a>
+    title="click on it"><img src="https://i.pinimg.com/originals/f9/21/35/f92135950f88020f5f5019ff8714cba4.jpg" alt="smiley" style="width:104px;height:140px;"></a>
   <h4>Link to an Email Address</h4>
   <p>Use <mark>mailto:</mark> inside the <mark>href</mark> attribute to create a link that opens the users email
     program.
@@ -151,44 +169,47 @@ And would suffice.</pre>
   <button onclick="document.location='/links.html'">button</button>
   <a href="#poem" title="go to poem">poem</a>
   </p>
-  <h3>THML Tables</h3>
-  <p>The <mark>&lt;table&gt;</mark> tag defines as HTML table. Each HTML row is defined with a &lt;tr&gt; tag. Each
-    table header is defined with a &lt;th&gt; tag. Each table data/cell is defined with a &lt;td&gt; tag.By default, the
-    text in &lt;th&gt; elements are bold,centered and the text in &lt;td&gt; elements are regular and left-aligned.
-    <mark>&lt;caption&gt;</mark> tag used for table title.
-  </p>
-  <table>
-    <caption>Basic HTML Table</caption>
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Age</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>92</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>80</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="3">List can be styled in many different ways</td>
-      </tr>
-    </tfoot>
-  </table>
+  <div id="tab1">
+    <h3>THML Tables</h3>
+    <p>The <mark>&lt;table&gt;</mark> tag defines as HTML table. Each HTML row is defined with a &lt;tr&gt; tag. Each
+      table header is defined with a &lt;th&gt; tag. Each table data/cell is defined with a &lt;td&gt; tag.By default,
+      the
+      text in &lt;th&gt; elements are bold,centered and the text in &lt;td&gt; elements are regular and left-aligned.
+      <mark>&lt;caption&gt;</mark> tag used for table title.
+    </p>
+    <table>
+      <caption>Basic HTML Table</caption>
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">List can be styled in many different ways</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
   <h3>HTML Styles</h3>
   <p>The HTML <b>style</b> attribute is used to add styles to an element, such as color, font, size, and more. style
     attribute syntax:<br/>
@@ -298,8 +319,60 @@ And would suffice.</pre>
       </tr>
     </tfoot>
   </table>
-  <h3>HTML Images</h3>
+  <div id="image1">
+    <h3>HTML Images</h3>
+    <p>Images are not technically inserted into a web pages. Images are linked to web pages. The
+      <mark>&lt;img&gt;</mark>
+      tag creates a holding space for the referenced image. The <mark>&lt;img&gt;</mark> tag ia empty, it contains
+      attributes only, and dose not have a closing tag.
+      <br>
+  The <mark>&lt;img&gt;</mark> tag has Two required attributes:
+    <ul>
+      <li>src - Specifies the path to the image.</li>
+      <li>alt - Specifies an alternate text for the image.</li>
+    </ul>
+    <br>
+  The <b>width, height, and style</b> attributes are all valid in HTML. However, we suggest using the <b>style</b>
+    attribute. It prevents styles sheets from changing the size of images.
+    <br>
+    <img src="https://static.toiimg.com/thumb/msid-74043966,imgsize-694334,width-800,height-600,resizemode-75/74043966.jpg" alt="Teddy" width="150" height="150">
+    <br>
+    <img src="https://static.toiimg.com/thumb/msid-74043966,imgsize-694334,width-800,height-600,resizemode-75/74043966.jpg" alt="Teddy" style="width:250px;height:250px;">
+    <img src="https://i.pinimg.com/originals/09/09/34/090934da02bc188f8305f42325617c7f.gif" alt="animated teddy" style="width:250px;height:250px;">
+    <br>
+    <h4> Images as a link</h4>
+    To use an image as a link, put the &lt;img&gt; tag inside the &lt;a&gt; tag.
+    <a href="https://www.w3schools.com" target="_blank"
+      title="Click on me!"><img src="https://5.imimg.com/data5/IL/PH/BA/SELLER-48241715/12-pcs-set-of-smiley-face-squeeze-ball-500x500.jpg" alt="smiley ball" style="width:100px;height:100px;"></a>
+    <h4>Image Floating</h4>
+    Use the CSS <b>float</b> property to let the image float to the right or to the left of a text.
+    <br>
+    <p><img src="https://5.imimg.com/data5/IL/PH/BA/SELLER-48241715/12-pcs-set-of-smiley-face-squeeze-ball-500x500.jpg" alt="smiley ball" style="float:right;width:50px;height:50px;"> The image will float to the right of the text.
+    </p>
+    <br>
+    <p><img src="https://5.imimg.com/data5/IL/PH/BA/SELLER-48241715/12-pcs-set-of-smiley-face-squeeze-ball-500x500.jpg" alt="smiley ball" style="float:left;width:50px;height:50px;"> The image will float to the left of the text.
+    </p>
+    <br>
 
+    <h3>THML Background Images</h3>
+    To add a background image on an HTML element, use the HTML ,<b>style</b> attribute and the CSS
+    <b>background-image</b> property.
+    <h3>Background Repeat</h3>
+    If the background image is smaller than the element, the image will repeat itself, horizontally and vertically,
+    until it reach the end of the element. To avoid the background image from repeating itself, set the
+    <b>backgroung-repeat</b> property to <b>no-repeat.</b>
+    <h3>Background Cover</h3>
+    If you want the background image to cover the entire element, you can set the <b>backgroung-size</b> property to
+    <b>cover</b>. Also, set the <b>background-attachment</b> property to <b> fixed</b>
+    This way, the background image will cover the entire element, with no stretching.
+    <br>
+    <h3>Background Stretch</h3>
+    If you want the background image to stretch to fit entire element, you can set the <b>background-size</b> property
+    to <b>100% 100%</b>.
+
+
+    </p>
+  </div>
 
 
 </body>
