@@ -59,6 +59,23 @@
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
+
+    .point {
+      background-color: tomato;
+      padding: 10px;
+      color: white;
+    }
+
+    .sub {
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    #mySubTitle {
+      background-color: lightblue;
+      padding: 40px;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -471,17 +488,40 @@ And would suffice.</pre>
   <span style="color:MediumSeaGreen; font-weight:bold;">style blocks of content.</span>
   <p>
   <div>
-    <h3>HTML Classes</h3>
+    <h3 class="point sub">HTML Classes</h3>
     <p>
     <ol>
-      <li>The <b>class</b> attribute can be used on any HTML element.</li>
+      <li class="point">The <b>class</b> attribute can be used on any HTML element.</li>
       <li>Different HTML elementcan point to the same class name.</li>
       <li>The HTML class attribute specifies one or more class names for an element.</li>
-      <li>To define multiple classes, separate the class name with a space, eg. &lt;div class="city main"&gt;. the
+      <li class="point">To define multiple classes, separate the class name with a space, eg. &lt;div class="city
+        main"&gt;. the
         element will be styled according to all the classes specified.</li>
+      <li>To create a class; write a period(.) character, followed by a class name. Then, define the CSS Properties
+        within curly braces {}.</li>
     </ol>
     </p>
-    <h3>HTML Id</h3>
+
+    <h3 id="mySubTitle">HTML Id</h3>
+    <p>
+    <ol>
+      <li class="point">
+        The HTML <b>id</b> attribute is used to specify a unique id for an HTML element.</li>
+      <li>The value of the <b>id</b> attribute must be unique with in the HTML element.</li>
+      <li>The value of the <b>id</b> attribute is case sensitive.</li>
+      <li class="point">The syntax for id is: write a hash character(#),followed by an id name. Then, define the CSS
+        property within
+        curly braces {}.</li>
+    </ol>
+    </p>
+    <h3>HTML Iframes</h3>
+    <p>An HTML iframe is used to display a web page within a web page.</p>
+    <ul>
+      <li>The HTML <b>&lt;iframe&gt;</b> tag specifies an inline frame</li>
+      <li>The <b>src</b> attribute defines the URL of the page to embed.</li>
+      <li>Always include a <b></b></li>
+    </ul>
+
   </div>
 
 </html>
