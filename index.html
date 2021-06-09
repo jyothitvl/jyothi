@@ -519,9 +519,42 @@ And would suffice.</pre>
     <ul>
       <li>The HTML <b>&lt;iframe&gt;</b> tag specifies an inline frame</li>
       <li>The <b>src</b> attribute defines the URL of the page to embed.</li>
-      <li>Always include a <b></b></li>
+      <li>Always include a <b>title</b> attribute for screen readers.</li>
+      <li>The <b>height</b> and <b>width</b> attributes specifies the size of the iframe.</li>
+      <li>By default, an iframe has a border around it. to remove the border, use <b>border:none;</b></li>
+      <li>An iframe can be used as the target frame for a link. The <b>target</b> attribute of the link must refer to
+        the <b>name</b> attribute of the iframe.</li>
     </ul>
-
+    <iframe src="/demoIframe.html" title="Iframe Example"></iframe>
+    <iframe src="/demoIframe.html" style="width:100%;height:300px;" title="Iframe Example"></iframe>
+    <iframe src="/demoIframe.html" style=" border:none;width:100%;height:300px;" title="Iframe Example"></iframe>
+    <iframe src="/demoIframe.html" name="iframe_a" style="width:100%;height:300px;" title="Iframe Example"></iframe>
+    <p><a href="https://google.com" target="iframe_a">W3Schools.com</a>
+      When the target attribute of alink matches the name of an iframe, the link will open in the iframe.</p>
   </div>
+  <div>
+    <h3>HTML JavaScript</h3>
+    <p>JavaScript make HTML pages more dynamic and interactive. The HTML <mark>&lt;script&gt;</mark> tag is used to
+      define a client-side script. Common used for JavaScript are image manipulation, form validation, and dynamic
+      chages of content.To select an HTML element, JavaScript most often uses the <b>document.getElementById()</b>
+      method.</p>
+    <h3>MY First JavaScript</h3>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button type="button" onclick="myFunction()">Click Me!.</button>
+    <p id="demo2">This is a demonstration.</p>
+  </div>
+  <script>
+    document.getElementById("demo1").innerHTML="Hello JavaScript!";
+    function myFunction(){ 
+      document.getElementById("demo2").innerHTML="Hello JavaScript!";
+      document.getElementById("demo2").style.fontSize="25px";
+      document.getElementById("demo2").style.color="green";
+      document.getElementById("demo2").style.backgroundColor="LightGray";
+    }
+   
+  </script>
+</body>
 
 </html>
