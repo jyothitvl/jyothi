@@ -6,9 +6,83 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .all-browsers {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+
+    .browser {
+      background: white;
+    }
+  </style>
 </head>
 
 <body>
+  <h1>HTML Layout Elements</h1>
+  <p>HTML has several semantic elements that define the different parts of web page.</p>
+  <p>A semantic element clearly describes its meaning to both the browser and the developer.<br> Ex. of
+    <strong>non-semantic</strong> elements: <b>&lt;div&gt;</b> and <b>&lt;span&gt;</b>- Tells nothing about its
+    content.<br>
+    Ex. of
+    <strong>semantic</strong> elements: <b>&lt;form&gt;</b>, <b>&lt;table&gt;</b>, and <b>&lt;article&gt;</b>- Clearly
+    defines its content.
+  </p>
+  <div>
+    <h2>Semantic Elements in HTML</h2>
+    <p>In HTML there are some semantic elements that can be used to define different parts of web page:</p>
+    <ul>
+      <li><b>&lt;article&gt;</b></li>
+      <li><b>&lt;aside&gt;</b></li>
+      <li><b>&lt;details&gt;</b></li>
+      <li><b>&lt;figcaption&gt;</b></li>
+      <li><b>&lt;figure&gt;</b></li>
+      <li><b>&lt;footer&gt;</b></li>
+      <li><b>&lt;header&gt;</b></li>
+      <li><b>&lt;main&gt;</b></li>
+      <li><b>&lt;mark&gt;</b></li>
+      <li><b>&lt;nav&gt;</b></li>
+      <li><b>&lt;section&gt;</b></li>
+      <li><b>&lt;summary&gt;</b></li>
+      <li><b>&lt;time&gt;</b></li>
+    </ul>
+  </div>
+  <section>
+    <h3>HTML <b>&lt;section&gt;</b> Element</h3>
+    <p>The <b>&lt;section&gt;</b> element defines a section in a document. A section is a thematic grouping of content,
+      typically with a heading. A web page could normally be split into sections for introduction, content, and contact
+      information.</p>
+  </section>
+  <div>
+    <h3>HTML <b>&lt;article&gt;</b> Element</h3>
+    <p>The <b>&lt;article&gt;</b> element specifies independent, self -contained content. An article can be used:
+    <ul>
+      <li>Forum post</li>
+      <li>Blog post</li>
+      <li>Newspaper article</li>
+    </ul>
+    Three articles with independent, self-contained content and use CSS styles.
+    </p>
+    <article class="all-browsers">
+      <h1>Most Popular Browsers</h1>
+      <article class="browser">
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web
+          browser today!</p>
+      </article>
+      <article class="browser">
+        <h2>Mozilla Firefox</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular
+          web browser since January, 2018.</p>
+      </article>
+      <article class="browser">
+        <h2>Microsoft Edge</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet
+          Explorer.</p>
+      </article>
+    </article>
+  </div>
 
 </body>
 
