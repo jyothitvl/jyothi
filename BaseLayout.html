@@ -16,6 +16,26 @@
     .browser {
       background: white;
     }
+
+    .all-browsers>h1,
+    .browser {
+      margin: 10px;
+      padding: 5px
+    }
+
+    .browser>h2,
+    p {
+      margin: 4px;
+      font-size: 90%;
+    }
+
+    aside {
+      width: 35%;
+      float: right;
+      background-color: lightgray;
+      margin-left: 10px;
+      padding-left: 10px;
+    }
   </style>
 </head>
 
@@ -49,13 +69,13 @@
     </ul>
   </div>
   <section>
-    <h3>HTML <b>&lt;section&gt;</b> Element</h3>
+    <h3 id="section">HTML <b>&lt;section&gt;</b> Element</h3>
     <p>The <b>&lt;section&gt;</b> element defines a section in a document. A section is a thematic grouping of content,
       typically with a heading. A web page could normally be split into sections for introduction, content, and contact
       information.</p>
   </section>
   <div>
-    <h3>HTML <b>&lt;article&gt;</b> Element</h3>
+    <h3 id="article">HTML <b>&lt;article&gt;</b> Element</h3>
     <p>The <b>&lt;article&gt;</b> element specifies independent, self -contained content. An article can be used:
     <ul>
       <li>Forum post</li>
@@ -82,6 +102,77 @@
           Explorer.</p>
       </article>
     </article>
+  </div>
+  <div>
+    <h3 id="header">HTML <b>&lt;header&gt;</b> Element</h3>
+    <p>The <b>&lt;header&gt;</b> element represents a cotainer for introductory content or a set of navigational links.
+      It typically contains:
+    <ul>
+      <li>one or more heading elements</li>
+      <li>logo or icon</li>
+      <li>authorship information</li>
+    </ul>
+    </p>
+    <h3 id="footer">HTML <b>&lt;footer&gt;</b> Element</h3>
+    <p>The <b>&lt;footer&gt;</b> element defines a footer for a document or section.
+      It typically contains:
+    <ul>
+      <li>copyright information</li>
+      <li>contact information</li>
+      <li>authorship information</li>
+      <li>site map</li>
+      <li>back to top links</li>
+      <li>related documents</li>
+    </ul>
+    </p>
+    <footer>
+      <p>Author: Venkat Sunil</p>
+      <p><a href="mailto:sunil@gmail.com">sunil@gmail.com</a></p>
+    </footer>
+  </div>
+  <div>
+    <h3 id="nav">HTML <b>&lt;nav&gt;</b> Element</h3>
+    <p>The <b>&lt;nav&gt;</b> element defines a set of navigation links.</p>
+    <nav>
+      <a href="/html/">HTML</a>|
+      <a href="/css/">CSS</a>|
+      <a href="/js/">JavaScript</a>|
+      <a href="/jquery/">jQuery</a>
+    </nav>
+  </div>
+  <div>
+    <h3 id="aside">HTML <b>&lt;aside&gt;</b> Element</h3>
+    <p>The <b>&lt;aside&gt;</b> element defines some content aside from the content it is placed in like a sidebar. The
+      <b>&lt;aside&gt;</b>content should be indirectly related to the surrounding content.
+    </p>
+    <aside>
+      <ul>
+        <li><a href="#article"><b>&lt;article&gt;</b</a></li>
+        <li><a href="#aside"><b>&lt;aside&gt;</b></a></li>
+        <li><b>&lt;details&gt;</b></li>
+        <li><a href="#fig"><b>&lt;figcaption&gt;</b></a></li>
+        <li><a href="#fig"><b>&lt;figure&gt;</b></a></li>
+        <li><a href="#footer"><b>&lt;footer&gt;</b></a></li>
+        <li><a href="#header"><b>&lt;header&gt;</b></a></li>
+        <li><b>&lt;main&gt;</b></li>
+        <li><b>&lt;mark&gt;</b></li>
+        <li><a href="#nav"><b>&lt;nav&gt;</b></a></li>
+        <li><a href="#section"><b>&lt;section&gt;</b></a></li>
+        <li><b>&lt;summary&gt;</b></li>
+        <li><b>&lt;time&gt;</b></li>
+      </ul>
+    </aside>
+  </div>
+  <div>
+    <h3 id="fig">HTML <b>&lt;figure&gt;</b> and <b>&lt;figcaption&gt;</b> Element</h3>
+    <p>The <b>&lt;figure&gt;</b> specifies self-contained content, like illustration, diagrams, photos, code listings,
+      etc</p>
+    <p>
+      <b>&lt;figcaption&gt;</b> tag defines a caption for a &lt;figure&gt;
+    </p>
+    <figure>
+      <img src="https://images6.alphacoders.com/597/thumb-350-597926.jpg" alt="wallpaper" style="width:250px;height:250px;">
+    </figure>
   </div>
 
 </body>
