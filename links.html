@@ -101,10 +101,33 @@
       <caption>CSS Combinators Selectors</caption>
       <thead>
         <tr>
-        <th>Selctor</th>
-        
+          <th>Selctor</th>
+          <th>Example</th>
+          <th>Example Description</th>
         </tr>
       </thead>
+      <tbody>
+        <tr>
+          <td>element element</td>
+          <td>div p</td>
+          <td>Selects all &lt;p&gt; inside &lt;div&gt; elements </td>
+        </tr>
+        <tr>
+          <td>element>element</td>
+          <td>div > p</td>
+          <td>Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+        </tr>
+        <tr>
+          <td>element+element</td>
+          <td>div + p</td>
+          <td>Selects the first &lt;p&gt; element that are placed immediately after &lt;div&gt; elements </td>
+        </tr>
+        <tr>
+          <td>element1~element2</td>
+          <td>p ~ ul</td>
+          <td>Selects every &lt;ul&gt; elements that are preceded by a &lt;p&gt; element </td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </body>
