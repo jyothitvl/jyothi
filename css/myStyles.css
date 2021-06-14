@@ -1,3 +1,4 @@
+/* Simple Selectors */
 h1 {
   color: brown; /* set text color brown */
 }
@@ -34,3 +35,4 @@ p.heading {
   /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
 }
+/* Combinators Selectors */
