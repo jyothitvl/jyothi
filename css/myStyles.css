@@ -1,6 +1,36 @@
 h1 {
-  color: brown;
+  color: brown; /* set text color brown */
 }
 body {
   background: rgb(215, 220, 221);
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  font-size: 20px;
+}
+#table1 {
+  background-image: url('https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276__340.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.heading {
+  color: blueviolet;
+}
+p.heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
