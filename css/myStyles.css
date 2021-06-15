@@ -70,3 +70,15 @@ a:hover {
 a:active {
   color: blue;
 }
+a.highlight:hover {
+  color: yellow;
+}
+div.highlight {
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+div.highlight:hover {
+  background-color: blue;
+}
