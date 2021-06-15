@@ -90,3 +90,6 @@ p#hide {
 div.tooltip:hover p#hide {
   display: block;
 }
+p:first-child {
+  background-color: lightgreen;
+}
