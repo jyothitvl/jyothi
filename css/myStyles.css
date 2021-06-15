@@ -93,3 +93,9 @@ div.tooltip:hover p#hide {
 p:first-child {
   background-color: lightgreen;
 }
+p.child i:first-child {
+  color: violet;
+}
+p.child1:first-child i {
+  background-color: green;
+}
