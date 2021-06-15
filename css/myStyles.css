@@ -54,3 +54,19 @@ div + p {
 p ~ ul {
   font-style: italic;
 }
+/* unvisited link */
+a:link {
+  color: red;
+}
+/* visited link */
+a:visited {
+  color: green;
+}
+/* mouse over link */
+a:hover {
+  color: brown;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
