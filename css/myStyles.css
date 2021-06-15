@@ -82,3 +82,11 @@ div.highlight {
 div.highlight:hover {
   background-color: blue;
 }
+p#hide {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+div.tooltip:hover p#hide {
+  display: block;
+}
