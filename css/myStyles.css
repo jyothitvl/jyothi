@@ -36,3 +36,21 @@ p.heading {
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
 }
 /* Combinators Selectors */
+div h2 {
+  background-color: mediumseagreen;
+}
+dl dt {
+  /* descendant selector */
+  font-weight: bold;
+}
+div > p {
+  /* Child selector */
+  color: orangered;
+}
+div + p {
+  /*Adjacent sibling selector */
+  font-style: italic;
+}
+p ~ ul {
+  font-style: italic;
+}
