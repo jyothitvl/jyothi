@@ -100,5 +100,20 @@ p.child1:first-child i {
   background-color: green;
 }
 h1::before {
-  content: url(https://st.depositphotos.com/1787196/2514/i/600/depositphotos_25142717-stock-photo-3d-cartoon-cute-yellow-ball.jpg.gif); 
+  /* content: url(https://st.depositphotos.com/1787196/2514/i/600/depositphotos_25142717-stock-photo-3d-cartoon-cute-yellow-ball.jpg.gif); */
+}
+h2::after {
+  content: '- sub headings';
+}
+p.heading::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+p.heading::first-line {
+  color: blue;
+  font-size: small-caps;
+}
+::marker {
+  color: red;
+  font-size: 20px;
 }
