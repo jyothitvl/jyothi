@@ -99,3 +99,6 @@ p.child i:first-child {
 p.child1:first-child i {
   background-color: green;
 }
+h1::before {
+  content: url(https://st.depositphotos.com/1787196/2514/i/600/depositphotos_25142717-stock-photo-3d-cartoon-cute-yellow-ball.jpg.gif); 
+}
