@@ -179,19 +179,29 @@
           <td>Selects every &lt;p&gt; element that has no child</td>
         </tr>
         <tr>
-          <td>:first-child</td>
+          <td>:first-child 'or' </br> :nth-child(1)</td>
           <td>p:first-child</td>
           <td>Selects every &lt;p&gt; element that is the first child of its parent</td>
         </tr>
         <tr>
-          <td>:first-of-type</td>
-          <td>p:first-of-type</td>
+          <td>:first-of-type 'or' </br>:nth-of-type(1)</td>
+          <td>p:first-of-type </td>
           <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
         </tr>
         <tr>
           <td>:lang(language)</td>
           <td>p:lang(it)</td>
-          <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+          <td>Selects every &lt;p&gt; element with a lang attribute value starting with "it" </td>
+        </tr>
+        <tr>
+          <td>:last-child 'or'</br>:nth-last-child(1)</td>
+          <td>p:last-child </td>
+          <td>Selects every &lt;p&gt; element that is the last child of its parent</td>
+        </tr>
+        <tr>
+          <td>:last-of-type 'or'</br>:nth-last-of-child(1)</td>
+          <td>p:last-of-type</td>
+          <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
         </tr>
       </tbody>
     </table>
