@@ -199,9 +199,116 @@
           <td>Selects every &lt;p&gt; element that is the last child of its parent</td>
         </tr>
         <tr>
-          <td>:last-of-type 'or'</br>:nth-last-of-child(1)</td>
+          <td>:last-of-type 'or'</br>:nth-last-of-type(1)</td>
           <td>p:last-of-type</td>
           <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+        </tr>
+        <tr>
+          <td>:not(selector)</td>
+          <td>:not(p)</td>
+          <td>Selects every element that is not a &lt;p&gt; element</td>
+        </tr>
+        <tr>
+          <td>:nth-child(n)</td>
+          <td>p:nth-child(2)</td>
+          <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+        </tr>
+        <tr>
+          <td>:nth-of-type(n)</td>
+          <td>p:nth-of-type(2)</td>
+          <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+        </tr>
+        <tr>
+          <td>:nth-last-child(n)</td>
+          <td>p:nth-last-child(2)</td>
+          <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+        </tr>
+        <tr>
+          <td>:nth-last-of-type(n)</td>
+          <td>p:nth-last-of-type(2)</td>
+          <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last
+            child</td>
+        </tr>
+        <tr>
+          <td>:only-child</td>
+          <td>p:only-child</td>
+          <td>Selects every &lt;p&gt;element that is the only child of its parent </td>
+        </tr>
+        <tr>
+          <td>:only-of-child</td>
+          <td>p:only-of-child</td>
+          <td>Selects every &lt;p&gt;element that is the only &lt;p&gt; element of its parent </td>
+        </tr>
+        <tr>
+          <td>:checked</td>
+          <td>input:checked</td>
+          <td>Selects every checked &lt;inpt&gt; element</td>
+        </tr>
+        <tr>
+          <td>:desabled</td>
+          <td>input:desabled</td>
+          <td>Selects every desabled &lt;inpt&gt; element</td>
+        </tr>
+        <tr>
+          <td>:enabled</td>
+          <td>input:enabled</td>
+          <td>Selects every enabled &lt;inpt&gt; element</td>
+        </tr>
+        <tr>
+          <td>:focus</td>
+          <td>input:focus</td>
+          <td>Selects the &lt;inpt&gt; element that has focus</td>
+        </tr>
+        <tr>
+          <td>:in-range</td>
+          <td>input:in-range</td>
+          <td>Selects &lt;inpt&gt; element with a value within a specified range</td>
+        </tr>
+        <tr>
+          <td>:out-of-range</td>
+          <td>input:out-of-range</td>
+          <td>Selects &lt;inpt&gt; element with a value outside a specified range</td>
+        </tr>
+        <tr>
+          <td>:invalid</td>
+          <td>input:invalid</td>
+          <td>Selects all &lt;inpt&gt; elements with an invalid value</td>
+        </tr>
+        <tr>
+          <td>:valid</td>
+          <td>input:valid</td>
+          <td>Selects all &lt;inpt&gt; elements with a valid value</td>
+        </tr>
+
+        <tr>
+          <td>:optinal</td>
+          <td>input:optional</td>
+          <td>Selects &lt;inpt&gt; elements with no "required" attribute</td>
+        </tr>
+        <tr>
+          <td>:required</td>
+          <td>input:required</td>
+          <td>Selects &lt;inpt&gt; elements with a "required" attribute specified</td>
+        </tr>
+        <tr>
+          <td>:read-only</td>
+          <td>input:read-only</td>
+          <td>Selects &lt;inpt&gt; elements with a "readonly" attribute specified</td>
+        </tr>
+        <tr>
+          <td>:read-write</td>
+          <td>input:read-write</td>
+          <td>Selects &lt;inpt&gt; elements with no "readonly" attribute</td>
+        </tr>
+        <tr>
+          <td>:root</td>
+          <td>root</td>
+          <td>Selects the document's root element</td>
+        </tr>
+        <tr>
+          <td>:target</td>
+          <td>#new:target</td>
+          <td>Selects the current active #new element (click on a URL containing that anchor name)</td>
         </tr>
       </tbody>
     </table>
@@ -225,6 +332,32 @@
       <p class="child1">I am <i>strong</i> person.I am <i>strong</i> person.</p>
       <p class="child1">I am <i>strong</i> person.I am <i>strong</i> person.</p>
     </div>
+  </div>
+  <div>
+    <h2>CSS Pseudo-elements</h2>
+    <p>Css Pseudo - element is used to style specified parts of an element. For example, it can be used to :
+    <ul>
+      <li>Style the first letter, or line, of an element</li>
+      <li>Insert content before, or after, the content of an element</li>
+    </ul>
+    </p>
+    <table>
+      <caption>All CSS Pseudo-elements</caption>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Example Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>::after</td>
+          <td>p::after</td>
+          <td>Insert something  </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 
