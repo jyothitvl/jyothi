@@ -122,3 +122,25 @@ h3::selection {
   background-color: brown;
   color: rgb(141, 141, 224);
 }
+/*CSS Attribute-selectors*/
+a[target] {
+  background-color: yellow;
+}
+a[target='_blank'] {
+  color: red;
+}
+img[title~='flower'] {
+  border: 3px solid red;
+}
+[class|='top'] {
+  background-color: yellow;
+}
+[class^='top'] {
+  /* background-color: yellow;*/
+}
+[class$='test'] {
+  background-color: yellow;
+}
+[class*='test'] {
+  /* background-color: yellow;*/
+}
