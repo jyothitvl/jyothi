@@ -102,6 +102,7 @@ p.child1:first-child i {
 h1::before {
   /* content: url(https://st.depositphotos.com/1787196/2514/i/600/depositphotos_25142717-stock-photo-3d-cartoon-cute-yellow-ball.jpg.gif); */
 }
+/* Pseudo-elements*/
 h2::after {
   content: '- sub headings';
 }
@@ -116,4 +117,8 @@ p.heading::first-line {
 ::marker {
   color: red;
   font-size: 20px;
+}
+h3::selection {
+  background-color: brown;
+  color: rgb(141, 141, 224);
 }

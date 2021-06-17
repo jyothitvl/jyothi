@@ -384,6 +384,63 @@
       </tbody>
     </table>
   </div>
+  <div>
+    <h2>CSS Attribute Selectors</h2>
+    <p>The [attribute] selector is used to select elements with a specified </p>
+    <table>
+      <caption>All CSS Attribute Selectors</caption>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Example Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>[attribute]</td>
+          <td>[target]</td>
+          <td>Selects all elements with a target attribute</td>
+        </tr>
+        <tr>
+          <td>[attribute=value]</td>
+          <td>[target=_blank]</td>
+          <td>Selects all elements with target="_blank" attribute</td>
+        </tr>
+        <tr>
+          <td>[attribute~=value]</td>
+          <td>[title~=flower]</td>
+          <td>Selects all elements with a title attribute containing the word "flower"</td>
+        </tr>
+        <tr>
+          <td>[attribute|=value]</td>
+          <td>[title|=flow]</td>
+          <td>Selects all elements with a title attribute value starting with "flow"</td>
+        </tr>
+        <tr>
+          <td>[attribute^=value]</td>
+          <td>a[href^="https"]</td>
+          <td>Selects every &lt;a&gt; element whose href attribute value begins with "https"</td>
+        </tr>
+        <tr>
+          <td>[attribute$=value]</td>
+          <td>a[href$=".pdf"]</td>
+          <td>Selects every &lt;a&gt; element whose href attribute value ends with ".pdf"</td>
+        </tr>
+        <tr>
+          <td>[attribute*=value]</td>
+          <td>a[href*="w3schools"]</td>
+          <td>Selects every &lt;a&gt; element whose href attribute value contains the substring "w3schools"</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The links with a target attribute gets a yellow background:</p>
+    <a href="https://www.w3schools.com">W3schools.com</a>
+    <a href="https://www.disney.in" target="_blank">Disney.in</a>
+    <a href="https://en.wikipedia.org" target="_top">Wikipedia.org</a>
+    <a href="https://www.google.com" target="_parent">Google</a>
+
+  </div>
 </body>
 
 </html>
