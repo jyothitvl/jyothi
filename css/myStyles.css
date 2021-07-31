@@ -148,5 +148,11 @@ img[title~='flower'] {
 .background {
   /* background-color: lightblue;
   opacity: 0.3;*/
-  background-color: rgba(50, 100, 255, 0.3);
+  /* background-color: rgba(50, 100, 255, 0.3);
+  background-image: url('https://banner2.cleanpng.com/20171127/0e8/fall-leaves-png-picture-5a1c8db57ab484.3293409215118207255026.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+  background: #ffffff
+    url('https://banner2.cleanpng.com/20171127/0e8/fall-leaves-png-picture-5a1c8db57ab484.3293409215118207255026.jpg')
+    no-repeat fixed right top;
 }
