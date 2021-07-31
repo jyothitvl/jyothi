@@ -144,3 +144,9 @@ img[title~='flower'] {
 [class*='test'] {
   /* background-color: yellow;*/
 }
+/*CSS Background*/
+.background {
+  /* background-color: lightblue;
+  opacity: 0.3;*/
+  background-color: rgba(50, 100, 255, 0.3);
+}
