@@ -156,3 +156,26 @@ img[title~='flower'] {
     url('https://banner2.cleanpng.com/20171127/0e8/fall-leaves-png-picture-5a1c8db57ab484.3293409215118207255026.jpg')
     no-repeat fixed right top;
 }
+li.dotted {
+  border-style: dotted;
+  border-width: thick;
+  border-color: blueviolet;
+}
+li.dashed {
+  border-style: dashed;
+  border-top-style: none;
+  border-bottom-color: blue;
+}
+li.solid {
+  border: 5px solid orange;
+}
+li.groove {
+  border-style: groove;
+  border-radius: 10px;
+}
+li.double {
+  border-style: dotted dashed solid double;
+}
+li.ridge {
+  border-bottom: 5px ridge brown;
+}
